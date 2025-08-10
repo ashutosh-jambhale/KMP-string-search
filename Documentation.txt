@@ -1,4 +1,4 @@
-Name: Ashutosh Jambhale Student ID: 1657201
+Name: Ashutosh Jambhale
 
 References:
 1)KMP: https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/
@@ -24,4 +24,5 @@ Steps:
 2)Reads FiftySentences.txt line by line.
 3)For line "a marmot should chase the quick wolf". Finds "marmot" starting at position 3.
 Output: 3 a marmot should chase the quick wolf.
+
 4)Continues through entire file.
