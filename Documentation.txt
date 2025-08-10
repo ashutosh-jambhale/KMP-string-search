@@ -1,0 +1,27 @@
+Name: Ashutosh Jambhale Student ID: 1657201
+
+References:
+1)KMP: https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/
+2)KMP: https://notes.iamdev.in/knuth-morris-pratt-kmp-algorithm-in-java-a-beginners-guide/
+
+Methods:
+main: Entry point that handles command-line arguments, either displaying the skip table or searching a file for the pattern.
+
+buildSkipTable: Constructs a skip table (partial match table) that stores how far to skip when mismatches occur during searching.
+
+calculateSkip: Computes the skip value for a specific character at a given pattern position by finding matching prefixes.
+
+printSkipTable: Displays the skip table with pattern characters as headers and skip values for each character.
+
+kmpSearch: Searches text for the pattern using the precomputed skip table to optimize comparisons.
+
+searchInFile: Reads a file line-by-line, searches each line for the pattern, and prints matching lines with their positions.
+
+Example of how this code works:
+Command: java KMPsearch "marmot" FiftySentences.txt
+Steps:
+1)Builds skip table for "marmot".
+2)Reads FiftySentences.txt line by line.
+3)For line "a marmot should chase the quick wolf". Finds "marmot" starting at position 3.
+Output: 3 a marmot should chase the quick wolf.
+4)Continues through entire file.
